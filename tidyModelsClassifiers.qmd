@@ -1,0 +1,39 @@
+---
+title: "tidyModelsClassifiers"
+format: html
+editor: visual
+---
+
+```{r}
+library(tidymodels)
+library(readr)
+
+```
+
+```{r}
+application_test_df <- read.csv("Datasets/application_train.csv")
+```
+
+# Model Specification
+
+```{r}
+
+lda_model <- discrim_linear(
+  mode = "classification",
+  penalty = NULL,
+  regularization_method = NULL,
+  engine = "MASS"
+)
+
+lr_model <- logistic_reg(
+  mode = "classification",
+  engine = "glm",
+  penalty = NULL,
+  mixture = NULL
+)
+
+svm_model <- svm_linear(mode = "classification", engine = "LiblineaR", cost = NULL, margin = NULL)
+
+```
+
+
