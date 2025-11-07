@@ -1,0 +1,9 @@
+iteration 1:
+
+Logistic Regression Accuracy: 0.9373486682808717
+SVM Accuracy: 0.9373486682808717
+LDA Accuracy: 0.9381053268765133
+
+Logistic Regression Accuracy: 0.9373486682808717
+SVM Accuracy: 0.9373486682808717
+LDA Accuracy: 0.937953995157385
